@@ -11,8 +11,9 @@ using namespace std;
 
 int main(void)
 {
+	int i=1,j=6;
 	swap(3,4);
-
+	swapptr(&i,&j);
 	return 1;
 
 }
@@ -24,5 +25,13 @@ void swap(int a,int b)
 	a=b;
 	b=temp;
 	cout<<"a= "<<a<<"\t"<<"b= "<<b<<endl;
+}
+void swapptr(int *a,int *b)
+{
+	int temp;
+	temp=*a;
+	*a=*b;
+	*b=temp;
+	cout<<"i= "<<*a<<"\t"<<"j= "<<*b<<endl;
 }
 
