@@ -9,6 +9,7 @@
 #define SWAP_H_
 
 void swap(int ,int);
+void swapptr(int *,int *);
 
 
 
